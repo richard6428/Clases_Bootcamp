@@ -1,0 +1,10 @@
+body {
+  background-image: url(http://todofondospantalla.com/wp-content/uploads/2016/03/Naturaleza/Vista-del-prado-con-la-ciudad-de-fondo-Naturaleza.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+}
+.color{
+  color: #ffffff;
+  font-family:"Comic Sans MS";
+}

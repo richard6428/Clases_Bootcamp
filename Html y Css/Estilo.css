@@ -1,0 +1,32 @@
+body{
+	background-image: url("https://images5.alphacoders.com/380/380567.png");
+	font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+
+}
+.titulo {
+
+  text-decoration: underline;
+}
+
+#texto {
+	border : solid white;
+}
+
+.list{
+	list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+p:hover {
+  color: black;
+}
+
+.lol {
+  float: left;
+  width: 900px;
+  text-align: justify;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<form id="form">
+    <fieldset>
+        <legend>Detalle de persona</legend>
+        <div>
+            <label>Nombre:
+            <input id="nombre" name="nombre" type="text">
+            </label>
+            <label>
+                Clave
+                <input id="clave" name="clave" type="password">
+            </label>
+            <label>
+                Teléfono
+                <input id="teléfono" name="teléfono" type="tel">
+            </label>
+            <label>
+                Correo
+                <input id="correo" name="correo" type="email">
+            </label>
+            <label>
+                Fecha
+                <input id="fecha" name="fecha" type="date">
+            </label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Tarjetas de Crédito</legend>
+        <div class="card-type">
+
+        <input id="visa" type="radio" name="cardtype">
+        <label for="visa">VISA</label>
+        <input id="master" type="radio" name="cardtype">
+        <label for="master">Master Card</label>
+        <input id="amex" type="radio" name="cardtype">
+        <label for="amex">American Express</label>
+
+        </div>
+
+        <div>
+            <input id="visa" type="checkbox" name="visa">
+        <label for="visa">VISA</label>
+        <input id="master" type="checkbox" name="master">
+        <label for="master">Master Card</label>
+        <input id="amex" type="checkbox" name="amex">
+        <label for="amex">American Express</label>
+
+        </div>
+
+        <div>
+            <label>
+                Descripción:
+                <textarea id="descripcion" name="descripcion" rows="10" cols="20"">
+                    </textarea>
+            </label>
+        </div>
+
+        <div>
+            <label>País</label>
+            <input id="pais" type="text" name="pais" list="lista-paises">
+            <datalist id="lista-países">
+                <option label="Colombia" value="Colombia"></option>
+                <option label="EEUU" value="EEUU"></option>
+            </datalist>
+
+        </div>
+        <input type="submit" onclick="mostrarDatos(); return false;" id="btnguardar">
+        <input type="reset" value="Limpiar">
+    </fieldset>
+
+    <p id="demo"></p>
+</form>
+    <script>
+        function mostrarDatos() {
+           var nombre = document.getElementById("nombre").value;
+
+           var clave = document.getElementById("clave").value;
+
+           var teléfono = document.getElementById("teléfono").value;
+
+           var correo = document.getElementById("correo").value;
+
+           var fecha = document.getElementById("fecha").value;
+
+           var mostrar = document.getElementById("demo").innerHTML = "Nombre:" + " " + nombre + "." + "<br>" + "Clave:" + " " + clave + "." + "<br>" + "Teléfono:" + " " + teléfono + "." + "<br>" + "Correo:" + " " + correo + "." + "<br>" + "Fecha:" + " " + fecha + "." + "<br>";
+
+           document.getElementById("form").reset();
+        }
+    </script>
+</body>
+</html>

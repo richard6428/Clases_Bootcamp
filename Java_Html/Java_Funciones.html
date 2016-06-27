@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+/**
+	*Descripcion: Funcion que retorna la suma de 2 numeros.
+	*Resultado: Devuelve la suma de los numeros pasados como parametros.
+*/	
+	function sumar(x, y) {
+		var s = x + y;
+		return s;
+	}
+
+	function multiplicar(x, y, z) {
+		var r = (x * y) + z;
+		return r;
+	}
+
+</script>
+
+	<p>Click al botón.</p>
+	<button onclick="alert(sumar(4,9,3))">Sumar</button><br>
+
+	<p>Click al botón.</p>
+	<button onclick="alert(multiplicar(4,9))">Multiplicar</button>
+	<!--p id="demo"></p-->
+<script>
+
+	function myfunction() {
+	    var person = prompt("Introduzca nombre: ", "");
+	    if (person != null) {
+	        document.getElementById("demo").innerHTML =
+	        "Hola " + person + "! Cómo Estás?";
+	    }
+	}
+</script>
+
+	<form name= "form1">
+		<input id="nombre" name="nombre" type="text">
+		<button onclick="optenerNombre()">Optener Nombre</button>
+	</form>
+<script>
+function optenerNombre(){
+	var nombre = document.getElementById("nombre").value;
+	document.write(nombre);
+}
+</script>
+</body>
+</html>

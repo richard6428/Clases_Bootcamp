@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	/*var x = 7%3;
+	var y = 27/3;
+	x+=y;
+	alert("X= "+ x + "," + " " + "Y= " + y);
+	console.log (x + " " + y);*/
+
+	/*var esValido = true;
+	var  monto = 100;
+	if (monto == 100 && esValido) 
+	{
+		monto = monto + 100;
+	} 
+	else 
+	{
+		monto = monto - 100;
+	}
+	console.log("El monto es: " + monto);
+	alert("El monto es:" + monto);*/
+
+//-----Escribir los numeros pares de 1 a 20----//
+
+	/*var cont;
+	for(cont=1; cont<=20; cont++) {
+		cont%0;
+		cont++;
+	alert(cont);
+	}*/
+
+//-----Escribir los numeros pares de 1 a 20----//
+
+	/*var cont;
+	for(cont=1; cont<=30; cont++) {
+		// Si la variable cont es PAR imprimo su valor
+		if (cont % 2 == 0) {
+			alert("El Numero Par Es:" + " " + cont);
+			console.log("El Numero Par Es:" + " " + cont);
+		}
+	}*/
+
+//-----Mostrar que numero es mayor igual o menor------//
+
+	/*var num1 = 1;
+	var num2 = 5;
+	var num3 = 16;
+
+	if(num1 > 10){
+		console.log("Num1  es mayor que 10");
+	}
+	else if(num1 < 10){
+		console.log("Num1  es menor que 10");
+	}else(num1 == 10){
+		console.log("Num1  es igual que 10");
+	}
+
+
+	if(num2 > 10){
+		console.log("Num2  es mayor que 10");
+	}
+	else if(num2 < 10){
+		console.log("Num2  es menor que 10");
+	}else(num2 == 10){
+		console.log("Num2  es igual que 10");
+	}
+
+
+	if(num3 > 10){
+		console.log("Num3  es mayor que 10");
+	}
+	else if(num3 < 10){
+		console.log("Num3  es menor que 10");
+	}else(num3 == 10){
+		console.log("Num3  es igual que 10");
+	}*/
+
+//------ adivine el numero-----//
+	/*var contador = 1;
+	while(contador <= 5)
+	{
+		var numUsuario = prompt("Introduzca un numero: ","");
+		var n = Math.ceil(Math.random() * 10);
+		if (numUsuario == n)
+		{
+			alert("Enhorabuena!!!");
+			break;
+		}else{
+			alert("Sigue intentando SONSO ! ")
+		}
+		contador++;
+	}*/
+
+//*****Calcular la nota promedio y mostrar el nombre del estudiante*****//
+
+	/*var nombre_alumno = prompt("Ingrese El Nombre Del Alumno: ", "");
+	var nota_1 = parseFloat(parseInt(prompt("Ingrese La Nota 1: ", "")));
+	var nota_2 = parseFloat(parseInt(prompt("Ingrese La Nota 2: ", "")));
+	var nota_3 = parseFloat(parseInt(prompt("Ingrese La Nota 3: ", "")));
+	var promedio = (nota_1 + nota_2 + nota_3) / 3;
+	alert("Nombre:" + " " + nombre_alumno + " " + "y su promedio es:" + " " + promedio);*/
+ 	 
+ 	var arreglo = ["carro","avion","tierra","tetero","sonso"];
+ 	var indice_aleatorio = Math.ceil(Math.random() * 10) % (arreglo.length);
+ 	
+ 	document.write(indice_aleatorio + "<br>");
+
+ 	var palabra_aleatoria = arreglo[indice_aleatorio];
+
+ 	document.write(palabra_aleatoria + "<br>");
+
+ 	for (var i = 0; i < 7; i++) {
+ 	
+ 		var letra_usuario = prompt("Introduzca una Letra: ", "");
+
+ 		var posletras = new array();
+ 		var encontrada = false;
+ 		for (var letra = 0; i = 0; letra < palabra_aleatoria.length; letra++) {
+ 			 var letra_maquina = palabra_aleatoria.charAt(letra);
+ 		if(letra_usuario == letra_maquina) {
+ 			posletras[i] = letra; i++;
+ 			encontrada = true;
+ 			}
+ 		}
+	}
+	
+</script>
+</body>
+</html>

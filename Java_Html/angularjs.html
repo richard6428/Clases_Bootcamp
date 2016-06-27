@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<script src=angular.min.js>
+	
+	</script>
+</head>
+<body ng-app>
+
+<!--Texto en Pantalla-->
+<p><b>TEXTO EN PANTALLA</b></P>
+
+	<div>
+		<p>Name: <input type=text ng-model=name></p>
+		<p ng-bind=name></p>
+	</div>
+
+<!--Variables-->
+<p><b>VARIABLES</b></P>
+
+	<div ng-init=quantity1=2;cost=5>
+		<p>Total in dollar: {{ quantity1 * cost }}</p>
+	</div>
+
+<!--Contador Numerico-->
+<p><b>CONTADOR NUMERICO</b></p>
+
+	<div>
+		<button ng-click="count = count + 1">Click Me!</button>
+		<p>{{ count }}</p>
+	</div>
+
+<!--Cambiar Nombre-->
+<p><b>CAMBIAR NOMBRE</b></p>
+
+	<div ng-init="firstName='John'; lastName='Doe'; edad=23">
+		<p>The full name is: {{ firstName + " " + lastName + " " + "Mi edad es:" + " " + edad }}
+		</p>
+	</div>
+
+<!--Vectores-->
+<p><b>VECTORES</b></p>
+
+	<div ng-init=points=[1,15,19,2,40]>
+		<p>The third result is {{ points[4] }}</p>
+	</div>
+
+<!--Repetir Datos-->
+<p><b>REPETIR DATOS</b></p>
+
+	<div data-ng-init=names1=['Luz','Liz','Ana']>
+		<p>Looping with ng-repeat:</p>
+	<ul>
+		<li ng-repeat="x in names1	">
+			{{ x }}
+		</li>
+	</ul>
+
+<!--Convertir a Mayusculas-->
+<p><b>CONVERTIR A MAYUSCULAS</b></p>
+
+	<div>
+		<p>Name: <input type=text ng-model=nombre></p>
+		<p>En mayúsculas {{ nombre | uppercase }}</p>
+	</div>
+
+<script>
+	function myController($scope) {
+		$scope.count = 0;
+	}
+</script>
+
+<!--Calculo Con Funciones-->
+<p><b>CALCULO CON FUNCIONES</b></p>
+
+	<div>
+		Quantity: <input type=number ng-model=quantity>
+		Price: <input type=number ng-model=price>
+		<p>Total = {{ (quantity * price) | currency }}</p>
+	</div>
+
+<script>
+	function costController($scope) {
+	 $scope.quantity = 1;
+	 $scope.price = 9.99;
+	}
+</script>
+
+<!--Ordenar Resultados Alfabeticamente-->
+<p><b>ORDENAR RESULTADOS ALFABETICAMENTE</b></p>
+
+	<div ng-init="names=[
+		{name:'Ana',country:'Paraguay'},
+		{name:'Victor',country:'Argentina'},
+		{name:'Luis',country:'Brasil'}]">
+		<p>Looping with objects:</p>
+	<ul>
+ 		<li ng-repeat="x in names | orderBy:'country'">
+ 		{{ x.name + ', ' + x.country }}</li>
+	</ul>
+	</div>
+
+<!--Filtrar Resultados-->
+<p><b>FILTRAR RESULTADOS</b></p>
+
+	<div ng-init="names=[
+		{name:'Ana',country:'Paraguay'},
+		{name:'Victor',country:'Argentina'},
+		{name:'Luis',country:'Brasil'}]">
+	<p>Filtering input:</p>
+	<p><input type="text" ng-model="test"></p>
+	<ul>
+		<li ng-repeat="x in names | filter:test |
+			orderBy:'country'">
+			 {{ x.name + ', ' + x.country }}</li>
+	</ul>
+	</div>
+
+</body>
+</html>
