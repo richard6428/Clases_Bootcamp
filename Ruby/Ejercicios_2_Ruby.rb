@@ -76,18 +76,40 @@ end
 
 #ejercicio #5
 
-puts "ingrese su estatura en metros"
+=begin
+puts "Ingrese su estatura en metros"
 estatura = gets.chomp.to_f
 
-puts "ingrese su peso en Kg"
+puts "Ingrese su peso en Kg"
 peso = gets.chomp.to_f
 
-puts "ingrese su edad"
+puts "Ingrese su edad"
 edad = gets.chomp.to_i
 
 masa = peso / estatura**2
 
-puts masa.to_i
+if (masa < 22) and (edad < 45)
+  puts "Su condicion de riesgo es Bajo"
+elsif (masa < 22) and (edad >= 45)
+  puts "Su condicion de riesgo es Medio"
+elsif (masa >= 22) and (edad < 45)
+  puts "Su condicion de riesgo es Medio"
+elsif (masa >= 22) and (edad >= 45)
+  puts "Su condicion de riesgo es Alto"
+end   
+=end
+    
+puts "Ingrese Nota Certamen_1"
+c1 = gets.chomp.to_f
+
+puts "Ingrese Nota Certamen_2"
+c2 = gets.chomp.to_f
+
+puts "Ingrese Nota Laboratorio"
+nl = gets.chomp.to_f
+
+
+
 
 
 
