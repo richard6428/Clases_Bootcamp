@@ -99,6 +99,9 @@ elsif (masa >= 22) and (edad >= 45)
 end   
 =end
     
+#Ejercicio #6
+
+=begin
 puts "Ingrese nota de certamen 1"
 c1 = gets.chomp.to_i
 puts "Ingrese nota de certamen 2"
@@ -109,7 +112,7 @@ nf = 60
 nc = ((nf - (nl * 0.3))/0.7)
 c3 = ((3*nc)-45-55).to_i
 puts "Necesita una nota de #{c3} para el certamen 3"
-
+=end
 
 
 
