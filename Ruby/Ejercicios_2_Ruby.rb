@@ -99,16 +99,16 @@ elsif (masa >= 22) and (edad >= 45)
 end   
 =end
     
-puts "Ingrese Nota Certamen_1"
-c1 = gets.chomp.to_f
-
-puts "Ingrese Nota Certamen_2"
-c2 = gets.chomp.to_f
-
-puts "Ingrese Nota Laboratorio"
-nl = gets.chomp.to_f
-
-
+puts "Ingrese nota de certamen 1"
+c1 = gets.chomp.to_i
+puts "Ingrese nota de certamen 2"
+c2 = gets.chomp.to_i
+puts "Ingrese la nota de laboratorio"
+nl = gets.chomp.to_i
+nf = 60
+nc = ((nf - (nl * 0.3))/0.7)
+c3 = ((3*nc)-45-55).to_i
+puts "Necesita una nota de #{c3} para el certamen 3"
 
 
 
