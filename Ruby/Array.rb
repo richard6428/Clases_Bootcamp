@@ -61,10 +61,10 @@ n = [4, 5, 8, 3, 9]
 n.each {|x| puts x if x%3==0 }
 =end
 
-=begin 
 
 a = [4, 5, 8, 3, 9]
-b= [ 5, 3, 2, 4, 7]
+b = [5, 3, 2, 4, 7]
 
-a.map{|c|c + b.each}
-=end
+
+
+

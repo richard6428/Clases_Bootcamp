@@ -40,7 +40,7 @@ puts "Promedio: #{promedio} - Min: #{menor} - Max: #{mayor}"
 
 #Ejercicio #3
 =begin
-puts "Ingrese un numeroa multiplicar por 20"
+puts "Ingrese un numero a multiplicar por 20"
 n = gets.chomp.to_i
 for multiplicador in 1..20
 	resultado = multiplicador * n
