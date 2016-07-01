@@ -61,10 +61,24 @@ n = [4, 5, 8, 3, 9]
 n.each {|x| puts x if x%3==0 }
 =end
 
+=begin
 
 a = [4, 5, 8, 3, 9]
 b = [5, 3, 2, 4, 7]
+c = []
+
+c = a.each do |a| + b.each do |b|
+puts c 
+end
+
+=end
 
 
+a = [1, 2, 3]
+b = [4, 5, 6]
+c = []
 
-
+a.each do |a|
+c = a+b.each do |b|
+  puts c
+end

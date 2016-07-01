@@ -1,3 +1,5 @@
+=begin
+
 #Maquina de Alimentos
 
 #Variables asociadas a los productos A, B, C
@@ -74,3 +76,28 @@ while true
 		break
 	end
 end
+
+=end
+
+#Palabra mas larga
+
+puts "Ingrese la primera palabra"
+palabra_1 = gets.chomp
+palabra_1 = palabra_1.upcase
+
+puts "Ingrese la segunda palabra"
+palabra_2 = gets.chomp
+palabra2 = palabra_2.upcase
+
+if (palabra_1.length > palabra_2.length)
+puts "La  palabra  #{palabra_1} es mayor"
+else
+  puts "La palabra #{palabra_2} es menor"
+end
+
+cant_palabra_1 = palabra_1.length
+cant_palabra_2 = palabra_2.length
+
+puts cant_palabra_1
+puts cant_palabra_2
+
