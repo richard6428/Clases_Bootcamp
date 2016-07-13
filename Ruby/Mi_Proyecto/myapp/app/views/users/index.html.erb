@@ -1,13 +1,15 @@
 <h1>Bienvenidos al sistema de registro de usuarios</h1>
 <table>
 	<tr>
-		<th>USUARIO --</th>
-		<th>TORRE --</th>
+		<th>USUARIO</th>
+		<th>TORRE</th>
 		<th>APARTAMENTO</th>
 	</tr>
 <% @users.each do |user| %>
 	<tr>
 		<td><%= user.name %></td>
+		<td><%= user.tower %></td>
+		<td><%= user.aparment %></td>
 		<td><%= link_to "Editar", edit_user_path(user) %></td>
 		<td><%= link_to "Agregar un nuevo usuario", edit_user_path(user) %></td>
 		<td><%= link_to "Eliminar", user_path(user), method: :delete, data:{confirm:"Estas Seguro"} %></td>

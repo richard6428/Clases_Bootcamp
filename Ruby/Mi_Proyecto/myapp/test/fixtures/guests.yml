@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  janitors: MyString
+  towers: MyString
+  aparment: MyString
+
+two:
+  janitors: MyString
+  towers: MyString
+  aparment: MyString
