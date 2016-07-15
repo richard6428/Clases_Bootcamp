@@ -1,0 +1,21 @@
+<h1>Bienvenido Al Registro De Usuarios</h1>
+
+<!--Table-->
+<table class="table">
+	<tr>
+		<th>Usuario</th>
+		<th>Torre</th>
+		<th>Apartamento</th>
+	</tr>
+
+<% @users.each do |user| %>
+	<tr>
+		<td><%= user.name %></td>
+		<td><%= user.tower %></td>
+		<td><%= user.aparment %></td>
+		<td><%= link_to "Editar", edit_user_path(user) %></td>
+		<td><%= link_to "Agregar Usuario", new_user_path(user) %></td>
+		<td><%= link_to "Eliminar", user_path(user), method: :delete, data:{confirm:"Esta Seguro ?"} %></td>
+	</tr>
+<% end %>
+</table>

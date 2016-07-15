@@ -1,0 +1,19 @@
+<h1>MASCOTAS</h1>
+
+<table>
+	<tr>
+		<td><strong>Nombre</strong></td>
+		<td><strong>Tipo De Mascota</strong></td>
+		<td><strong>Edad</strong></td>
+	</tr>
+<% @pets.each do |pet| %>
+	<tr>
+		<td><%= @pet.name%></td>
+		<td><%= link_to "Editar---", edit_pet_path(pet) %></td>
+		<td><%= link_to "Agregar Nueva Mascota---", new_pet_path(pet) %></td>
+		<td><%= link_to "Eliminar", pet_path(pet), method: :delete, data:{confirm:"Desea Eliminarlo?"} %></td>
+	</tr>
+<% end %>
+</table>
+
+

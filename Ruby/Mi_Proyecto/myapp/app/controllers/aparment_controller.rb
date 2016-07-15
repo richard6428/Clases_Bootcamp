@@ -1,2 +1,0 @@
-class AparmentController < ApplicationController
-end
