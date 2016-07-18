@@ -1,0 +1,22 @@
+<h1>Editar Registro De Citas</h1>
+
+<%= form_for @vet do |t| %>
+  <p>
+    <%= t.label :name, "Nombre Del Dueño" %><br>
+    <%= t.text_field :name %>
+  </p>
+
+  <p>
+    <%= t.label :lastname, "Apellido" %><br>
+    <%= t.text_field :lastname %>
+  </p>
+
+  <p>
+    <%= t.label :turno, "Turno" %><br>
+    <%= t.text_field :turno %>
+  </p>
+
+  <p>
+    <%= t.submit "Editar Cita" %>
+  </p>
+<% end %>

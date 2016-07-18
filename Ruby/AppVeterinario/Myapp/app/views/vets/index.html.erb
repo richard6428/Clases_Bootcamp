@@ -1,0 +1,19 @@
+<h1>Citas Actuales</h1>
+
+<table>
+  <tr>
+    <td><strong>Nombre Del Dueño</strong></td>
+    <td><strong>Apellido</strong></td>
+    <td><strong>Turno</strong></td>
+  </tr>
+<% @vets.each do |vet| %>
+  <tr>
+    <td><%=   vet.name %></td>
+    <td><%= vet.lastname %></td>
+    <td><%= vet.turno %></td>
+    <td><%= link_to "Editar  ---" , edit_vet_path(vet) %></td>
+    <td><%= link_to "Registra Nueva Cita  ---", new_vet_path(vet) %></td><br>
+    <td><%= link_to "Eliminar Cita", vet_path(vet), method: :delete, data:{confirm:"Desea Eliminar Su Cita?"} %></td>
+  </tr>
+<% end %>
+</table>
