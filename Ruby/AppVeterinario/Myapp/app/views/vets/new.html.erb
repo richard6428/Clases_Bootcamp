@@ -1,14 +1,13 @@
-<<<<<<< HEAD
-<h1>Nueva Cita</h1>
+<h1>Ingrese Veterinario</h1>
 
 <%= form_for @vet do |t| %>
   <p>
-    <%= t.label :name, "Nombre Del Dueño" %><br>
+    <%= t.label :name, "Nombre Veterinario" %><br>
     <%= t.text_field :name %>
   </p>
 
   <p>
-    <%= t.label :lastname, "Apellido" %><br>
+    <%= t.label :lastname, "Apellido Veterinario" %><br>
     <%= t.text_field :lastname %>
   </p>
 
@@ -18,10 +17,6 @@
   </p>
 
   <p>
-    <%= t.submit "Registrar Cita" %>
+    <%= t.submit "Registrar" %>
   </p>
 <% end %>
-=======
-<h1>Vets#new</h1>
-<p>Find me in app/views/vets/new.html.erb</p>
->>>>>>> 5bdca36ffd0b9475c0a8539ca041914f981ae0e6

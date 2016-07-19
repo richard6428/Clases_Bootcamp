@@ -4,7 +4,6 @@
 	<tr>
 		<td><strong>Nombre</strong></td>
 		<td><strong>Tipo De Mascota</strong></td>
-<<<<<<< HEAD
 		<td><strong>Edad En Años</strong></td>
 	</tr>
 <% @pets.each do |pet| %>
@@ -14,23 +13,11 @@
 		<td><%= pet.age %></td>
 		<td><%= link_to "Editar  ---"	, edit_pet_path(pet) %></td>
 		<td><%= link_to "Agregar Nueva Mascota  ---", new_pet_path(pet) %></td><br>
-=======
-		<td><strong>Edad</strong></td>
-	</tr>
-<% @pets.each do |pet| %>
-	<tr>
-		<td><%= @pet.name%></td>
-		<td><%= link_to "Editar---", edit_pet_path(pet) %></td>
-		<td><%= link_to "Agregar Nueva Mascota---", new_pet_path(pet) %></td>
->>>>>>> 5bdca36ffd0b9475c0a8539ca041914f981ae0e6
 		<td><%= link_to "Eliminar", pet_path(pet), method: :delete, data:{confirm:"Desea Eliminarlo?"} %></td>
 	</tr>
 <% end %>
 </table>
 
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 5bdca36ffd0b9475c0a8539ca041914f981ae0e6
