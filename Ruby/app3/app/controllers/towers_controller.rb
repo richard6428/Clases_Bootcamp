@@ -1,4 +1,8 @@
+<<<<<<< HEAD
   class TowersController < ApplicationController
+=======
+class TowersController < ApplicationController
+>>>>>>> 5bdca36ffd0b9475c0a8539ca041914f981ae0e6
 
    def index
     @towers=Tower.all   

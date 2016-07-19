@@ -29,7 +29,11 @@ class AppointmentsController < ApplicationController
   	redirect_to appointments_path
   end
 
+<<<<<<< HEAD
   def appointments_params
+=======
+  def user_params
+>>>>>>> 5bdca36ffd0b9475c0a8539ca041914f981ae0e6
   	params.require(:appointment).permit(:day, :hour)
   end
 end
