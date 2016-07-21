@@ -1,2 +1,17 @@
-<h1>Appointments#new</h1>
-<p>Find me in app/views/appointments/new.html.erb</p>
+<h1>Nueva Cita</h1>
+
+<%= form_for @appointment do |t| %>
+  <p>
+    <%= t.label :day, "Dia De La Cita" %><br>
+    <%= t.text_field :day %>
+  </p>
+
+  <p>
+    <%= t.label :hour, "Hora De La Cita" %><br>
+    <%= t.text_field :hour %>
+  </p>
+
+  <p>
+    <%= t.submit "Registrar Cita" %>
+  </p>
+<% end %>

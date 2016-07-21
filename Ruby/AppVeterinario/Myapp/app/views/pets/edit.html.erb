@@ -1,2 +1,22 @@
-<h1>Pets#edit</h1>
-<p>Find me in app/views/pets/edit.html.erb</p>
+<h1>Editar Datos De La Mascota</h1>
+
+<%= form_for @pet do |t| %>
+  <p>
+    <%= t.label :name, "Nombre De La Mascota" %><br>
+    <%= t.text_field :name %>
+  </p>
+
+  <p>
+    <%= t.label :type_of_pet, "Tipo De Mascota" %><br>
+    <%= t.text_field :type_of_pet %>
+  </p>
+
+  <p>
+    <%= t.label :age, "Edad En Años" %><br>
+    <%= t.text_field :age %>
+  </p>
+
+  <p>
+    <%= t.submit "Actualizar Datos" %>
+  </p>
+<% end %>

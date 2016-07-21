@@ -1,2 +1,19 @@
-<h1>Vets#index</h1>
-<p>Find me in app/views/vets/index.html.erb</p>
+<h1>Veterinarios</h1>
+
+<table>
+  <tr>
+    <td><strong>Nombre Del Veterinario</strong></td>
+    <td><strong>Apellido Veterinario</strong></td>
+    <td><strong>Turno</strong></td>
+  </tr>
+<% @vets.each do |vet| %>
+  <tr>
+    <td><%=   vet.name %></td>
+    <td><%= vet.lastname %></td>
+    <td><%= vet.turno %></td>
+    <td><%= link_to "Editar  ---" , edit_vet_path(vet) %></td>
+    <td><%= link_to "Registra Veterinario  ---", new_vet_path(vet) %></td><br>
+    <td><%= link_to "Eliminar Veterinario", vet_path(vet), method: :delete, data:{confirm:"Desea Eliminar Los Datos?"} %></td>
+  </tr>
+<% end %>
+</table>

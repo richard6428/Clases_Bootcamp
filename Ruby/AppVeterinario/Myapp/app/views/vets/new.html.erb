@@ -1,2 +1,22 @@
-<h1>Vets#new</h1>
-<p>Find me in app/views/vets/new.html.erb</p>
+<h1>Ingrese Veterinario</h1>
+
+<%= form_for @vet do |t| %>
+  <p>
+    <%= t.label :name, "Nombre Veterinario" %><br>
+    <%= t.text_field :name %>
+  </p>
+
+  <p>
+    <%= t.label :lastname, "Apellido Veterinario" %><br>
+    <%= t.text_field :lastname %>
+  </p>
+
+  <p>
+    <%= t.label :turno, "Turno" %><br>
+    <%= t.text_field :turno %>
+  </p>
+
+  <p>
+    <%= t.submit "Registrar" %>
+  </p>
+<% end %>
