@@ -1,0 +1,69 @@
+<em><h1>Welcome#Form</h1></em>
+<%= form_tag('/Welcome/contact', method: 'get') do %>
+	<p>
+		<div class="field">
+			<%= label_tag :Nombre %><br>
+			<%= text_field_tag :name %>
+		</div>
+	</p>
+	<p>
+		<div class="field">
+			<%= label_tag :Apellido %><br>
+			<%= text_field_tag :lastname %>
+		</div>
+	</p>
+	<p>
+		<div class="field">
+			<%= label_tag :Email %><br>
+			<%= email_field_tag :email %>
+		</div>
+	</p>
+	<p>
+		<div class="field">
+			<%= label_tag :Fecha %><br>
+			<%= date_select :date, start_year: 1920, end_year: 2050 %>
+		</div>
+	</p>
+	<p>
+		<div class="field">
+			<%= label_tag :Sexo %><br>
+			<%= radio_button_tag :sex, "Masculino" %> Masculino
+			<%= radio_button_tag :sex, "Femenino" %> Femenino
+		</div>
+	</p>
+	<p>
+		<div class="field">
+			<label>Lenguajes de programacion preferidos:</label><br>
+			<%= check_box_tag(:languaje) %>
+			<%= label_tag(:Lenguaje, "Ruby") %>
+			<%= check_box_tag(:languaje) %>
+			<%= label_tag(:Lenguaje, "Phyton") %>
+			<%= check_box_tag(:languaje) %>
+			<%= label_tag(:Lenguaje, "Scala") %>
+			<%= check_box_tag(:languaje) %>
+			<%= label_tag(:Lenguaje, "JavaScript") %>
+			<%= check_box_tag(:languaje) %>
+			<%= label_tag(:Lenguaje, "Java") %>
+		</div>
+	</p>
+	<p>
+		<div class="field">
+			<%= label_tag :Experiencia %><br>
+			<%= text_area_tag :experience %>
+		</div>
+	</p>
+	<p>
+    <label>Tiempo de experiencia laboral: </label><br>
+    <select>
+      <option value = "1">6 meses</option>
+      <option value = "2">1 año</option>
+      <option value = "3">1 año y 6 meses</option>
+      <option value = "4">2 años</option>
+    </select>
+  </p>
+
+	<p>
+		<%= submit_tag("Enviar") %>
+  </p>
+<% end %>
+
