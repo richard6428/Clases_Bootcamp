@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Reference:</strong>
+  <%= @inventory.reference %>
+</p>
+
+<p>
+  <strong>Producttype:</strong>
+  <%= @inventory.productType %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @inventory.brand %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @inventory.quantity %>
+</p>
+
+<p>
+  <strong>Purchasedate:</strong>
+  <%= @inventory.purchaseDate %>
+</p>
+
+<p>
+  <strong>Warranty:</strong>
+  <%= @inventory.warranty %>
+</p>
+
+<p>
+  <strong>Idclassroom:</strong>
+  <%= @inventory.idClassroom %>
+</p>
+
+<%= link_to 'Edit', edit_inventory_path(@inventory) %> |
+<%= link_to 'Back', inventories_path %>

@@ -1,0 +1,1 @@
+json.partial! "uvas/uva", uva: @uva

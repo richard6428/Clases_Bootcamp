@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Document:</strong>
+  <%= @user_blog.document %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user_blog.name %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @user_blog.lastname %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @user_blog.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user_blog.email %>
+</p>
+
+<%= link_to 'Edit', edit_user_blog_path(@user_blog) %> |
+<%= link_to 'Back', user_blogs_path %>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @lesson.teacher %>
+</p>
+
+<p>
+  <strong>Purpose:</strong>
+  <%= @lesson.purpose %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @lesson.date %>
+</p>
+
+<p>
+  <strong>Quota:</strong>
+  <%= @lesson.quota %>
+</p>
+
+<p>
+  <strong>Classroomnumber:</strong>
+  <%= @lesson.classroomNumber %>
+</p>
+
+<p>
+  <strong>Idstudents:</strong>
+  <%= @lesson.idStudents %>
+</p>
+
+<p>
+  <strong>Idclassroom:</strong>
+  <%= @lesson.idClassroom %>
+</p>
+
+<p>
+  <strong>Idteacher:</strong>
+  <%= @lesson.idTeacher %>
+</p>
+
+<%= link_to 'Edit', edit_lesson_path(@lesson) %> |
+<%= link_to 'Back', lessons_path %>

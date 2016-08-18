@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  teacher: MyString
+  purpose: MyString
+  date: 2016-08-16
+  quota: 1
+  classroomNumber: 1
+  idStudents: 1
+  idClassroom: 1
+  idTeacher: 1
+
+two:
+  teacher: MyString
+  purpose: MyString
+  date: 2016-08-16
+  quota: 1
+  classroomNumber: 1
+  idStudents: 1
+  idClassroom: 1
+  idTeacher: 1
