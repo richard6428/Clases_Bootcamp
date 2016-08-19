@@ -1,0 +1,93 @@
+<div class="main">
+  <%= render "partials/nav"%>
+  <!-- corousel 900x500-->
+  <div class="container ">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <%= image_tag("img4.jpg") %>
+          <div class="carousel-caption">
+            <h3>Imagen uno</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+              <hr>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("img1.jpg") %>
+          <div class="carousel-caption">
+            <h3>Imagen dos</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+              <hr>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("img3.jpg") %>
+          <div class="carousel-caption">
+            <h3>Imagen tres</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+              <hr>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="icon-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="icon-next" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- fin carrousel-->
+    <br>
+    <div class="row">
+      <!--uno-->
+      <div class="col-md-6">
+        <div class="card">
+          <%= image_tag("imgp.jpg", class: "card-img-top") %>
+
+          <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-block">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+      <!--dos-->
+      <div class="col-md-6">
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-block">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--fin container-->
+  </div>
+</div>
+<!--fin main-->

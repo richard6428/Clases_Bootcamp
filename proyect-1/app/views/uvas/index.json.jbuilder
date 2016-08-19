@@ -1,0 +1,1 @@
+json.array! @uvas, partial: 'uvas/uva', as: :uva

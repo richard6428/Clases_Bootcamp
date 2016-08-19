@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Inventories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Reference</th>
+      <th>Producttype</th>
+      <th>Brand</th>
+      <th>Quantity</th>
+      <th>Purchasedate</th>
+      <th>Warranty</th>
+      <th>Idclassroom</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inventories.each do |inventory| %>
+      <tr>
+        <td><%= inventory.reference %></td>
+        <td><%= inventory.productType %></td>
+        <td><%= inventory.brand %></td>
+        <td><%= inventory.quantity %></td>
+        <td><%= inventory.purchaseDate %></td>
+        <td><%= inventory.warranty %></td>
+        <td><%= inventory.idClassroom %></td>
+        <td><%= link_to 'Show', inventory %></td>
+        <td><%= link_to 'Edit', edit_inventory_path(inventory) %></td>
+        <td><%= link_to 'Destroy', inventory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Inventory', new_inventory_path %>

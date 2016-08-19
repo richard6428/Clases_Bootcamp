@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  classroomType: MyString
+  classroomNumber: 1
+  capacity: 1
+  uvaId: 1
+
+two:
+  classroomType: MyString
+  classroomNumber: 1
+  capacity: 1
+  uvaId: 1

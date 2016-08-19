@@ -1,0 +1,41 @@
+<%= form_for(@uva) do |f| %>
+  <% if @uva.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@uva.errors.count, "error") %> prohibited this uva from being saved:</h2>
+
+      <ul>
+      <% @uva.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nameUva %><br>
+    <%= f.text_field :nameUva %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :commune %><br>
+    <%= f.text_field :commune %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.number_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :manager %><br>
+    <%= f.text_field :manager %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

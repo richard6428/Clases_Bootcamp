@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nameuva:</strong>
+  <%= @uva.nameUva %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @uva.address %>
+</p>
+
+<p>
+  <strong>Commune:</strong>
+  <%= @uva.commune %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @uva.phone %>
+</p>
+
+<p>
+  <strong>Manager:</strong>
+  <%= @uva.manager %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @uva.email %>
+</p>
+
+<%= link_to 'Edit', edit_uva_path(@uva) %> |
+<%= link_to 'Back', uvas_path %>
